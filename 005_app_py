@@ -1,0 +1,13 @@
+# Obtener el promedio de un estudiante a partir de 3 notas
+
+# Inicio: Definir variables de las notas
+nota_01 = 15
+nota_02 = 14
+nota_03 = 17
+# Proceso: Definir el proceso de cálculo del promedio de notas
+promedio_notas = (nota_01*0.2 + nota_02*0.35 + nota_03.0.45)
+# Salida: Mostrar el resultado del promedio
+print(f"primera nota: {nota_01}")
+print(f"segunda nota: {nota_02}")
+print(f"tercera nota: {nota_03}")
+print(f"promedio de notas: {promedio_notas}")
