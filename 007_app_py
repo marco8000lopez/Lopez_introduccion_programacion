@@ -1,0 +1,9 @@
+# PROGRAMA DE PRECIO DE VENTA DE EQUIPO INFORMATICO Y CANTIDAD
+LAPTOP HP I7 = 2000
+
+# CANTIDAD DE PRODUCTOS 
+CANTIDAD DE LAPTOP = 3
+
+# CANTIDAD DE COMPRA
+cantidad de laptos vendidas = LAPTOP HP I7 * CANTIDAD DE LAPTOP
+PRINT (f"cantidad de laptos hp vendidas es: {cantidad de laptos vendidas}")
