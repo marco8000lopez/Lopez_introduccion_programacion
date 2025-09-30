@@ -6,8 +6,8 @@
 
 # Ejemplo:
 
-# Listado de frutas
-frutas = ["manzana", "mandarina", "arándanos", "fresas", "maracuyá"]
+# Listado de nombres de personas
+nombres = ["Maria", "Jose", "Mateo", "Chuchi", "Tilin"]
 
-for fruta in frutas:
-    print(fruta)
+for nombre in nombres:
+    print(nombre)

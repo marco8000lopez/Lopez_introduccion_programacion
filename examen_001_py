@@ -1,0 +1,17 @@
+# Titulo del programa
+# Convertidor de Soles (PEN) a Dolares (USD)
+
+# el monto en soles
+monto_soles = float(input("Ingrese el monto en soles que desea cambiar: " ))
+
+# tipo de cambio actual
+tipo_cambio = 3.85
+
+# Calcular el monto en dolares (USD)
+monto_dolares = monto_soles / tipo_cambio
+
+# Mostrar el resultado
+print("Resultado de la Conversión es")
+print(f"Monto ingresado: S/ {monto_soles: .2f} PEN")
+print(f"Tipo de cambio: 1 dolar = {tipo_cambio:} PEN")
+print(f"Monto del cambio: {monto_dolares: .2f} USD")
