@@ -1,0 +1,19 @@
+nombre = str(input("nombre de vendedor: "))
+sueldo_base = float(input("sueldo base (s/): "))
+ventas = float(input("ventas del mes (s/): "))
+comision = ventas * 0.08
+if (ventas >=8000):
+    bono = 300
+total_por_impuestos = bono + comision
+impuesto_a_la_renta = total_por_impuestos * 0.08
+sueldo_a_pagar = sueldo_base + comision + bono - impuesto_a_la_renta
+print(f"---reporte vendedor {nombre}---")
+print(f"sueldo base      : s/{sueldo_base}")
+print(f"ventas del mes   : s/{ventas}")
+print("----------------------------------------")
+print(f" + comision  (8%) : s/{comision}")
+print(f" + bono           : s/{bono}")
+print(f" - impuesto  (8%) : s/{impuesto_a_la_renta}")
+print(f"---------------------------------------")
+print(f" sueldo neto a pagar : s/{sueldo_a_pagar}")
+print(f"=========================================")

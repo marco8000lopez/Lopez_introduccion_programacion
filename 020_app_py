@@ -1,0 +1,62 @@
+# Datos de entrada del equipo de ventas para el mes de setiembre
+vendedores = [
+    {"nombre": "Ana", "sueldo_base": 2500, "ventas_mes": 9500},
+    {"nombre": "beto", "sueldo_base": 2200, "ventas_mes": 7800},
+    {"nombre": "carla", "sueldo_base": 2800, "ventas_mes": 12000}
+]
+
+# Definición de las reglas de cálculo
+TASA_COMISION = 0.08
+BONO_RENDIMIENTO = 300
+VENTAS_MINIMAS_BONO = 8000
+TASA_IMPUESTO = 0.08
+
+# Función para calcular el sueldo de un vendedor
+def calcular_sueldo_final(vendedor):
+    """
+    Calcula el sueldo final de un vendedor basándose en las reglas de negocio.
+    """
+    ventas = vendedor["ventas_mes"]
+    sueldo_base = vendedor["sueldo_base"]
+
+    # 1. Regla 1: Comisión Base (8% sobre las ventas)
+    comision_base = ventas * TASA_COMISION
+
+    # 2. Regla 2: Bono por Rendimiento (S/ 300 si las ventas > S/ 8000)
+    bono_rendimiento = 0
+    if ventas > VENTAS_MINIMAS_BONO:
+        bono_rendimiento = BONO_RENDIMIENTO
+
+    # 3. Regla 3: Impuesto a la Renta (8% sobre Comisión Base + Bono)
+    ingresos_brutos = comision_base + bono_rendimiento
+    impuesto_renta = ingresos_brutos * TASA_IMPUESTO
+    
+    # 4. Regla 4: Sueldo Final Neto
+    sueldo_final = sueldo_base + comision_base + bono_rendimiento - impuesto_renta
+
+    return {
+        "comision_base": comision_base,
+        "bono_rendimiento": bono_rendimiento,
+        "impuesto_renta": impuesto_renta,
+        "sueldo_final": sueldo_final
+    }
+
+# Generar el reporte de salida
+for vendedor in vendedores:
+    resultados = calcular_sueldo_final(vendedor)
+    
+    # Imprimir el reporte para cada vendedor
+    print("="*40)
+    print(f"REPORTE DE SUELDO - {vendedor['nombre'].upper()}")
+    print("="*40)
+    print(f"Datos de Entrada:")
+    print(f"  - Sueldo Base: S/ {vendedor['sueldo_base']:.2f}")
+    print(f"  - Ventas del Mes: S/ {vendedor['ventas_mes']:.2f}")
+    print("-" * 20)
+    print(f"Cálculos:")
+    print(f"  - Comisión Base (8%): S/ {resultados['comision_base']:.2f}")
+    print(f"  - Bono por Rendimiento: S/ {resultados['bono_rendimiento']:.2f}")
+    print(f"  - Impuesto a la Renta (8%): S/ {resultados['impuesto_renta']:.2f}")
+    print("-" * 20)
+    print(f"SUELDO FINAL NETO: S/ {resultados['sueldo_final']:.2f}")
+    print("="*40 + "\n")
