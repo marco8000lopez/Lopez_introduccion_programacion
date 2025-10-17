@@ -1,0 +1,16 @@
+# Ejercicio 3 - Funciones
+
+"""
+Calcula el precio final de un producto aplicando un descuento.
+El usuario debe ingresar un monto y un valor de porcentaje de descuento.
+Por ejemplo: Un producto cuesta 2500 y el porcentaje de descuento es 10%
+¿Cuanto es el monto a pagar?
+"""
+def precio_final(costoventa, descuento):
+    monto_descuento = costoventa * descuento
+    monto_venta = costoventa - monto_descuento
+    return monto_venta
+
+#utilizando la funcion
+monto_pagar = precio_final(2500, 0.10)
+print(f"monto a pagar: S/ {monto_pagar:.2f} incluye descuento de 10%")

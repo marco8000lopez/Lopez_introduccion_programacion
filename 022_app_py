@@ -1,0 +1,9 @@
+# ejercicio #02 funciones
+#convertir de soles a dolares
+def convertir_moneda(montosoles, tipoCambio):
+    montoDolares = montosoles / tipoCambio
+    return montoDolares
+
+#utilizando la funcion
+compraDolares = convertir_moneda(2000, 3.48)
+print(f"El monto en dolares es: $ {compraDolares:.2f} dolares")
