@@ -1,0 +1,11 @@
+# listas
+
+# creamos nuestra primera lista
+diasSemana = ["Lunes", "Martes", "Miercoles", "Jueves", "viernes"]
+
+# imprimier la lista de elementos
+print(diasSemana)
+
+#imprimir e ltercer elemento
+print(diasSemana[2])
+print(diasSemana[4])

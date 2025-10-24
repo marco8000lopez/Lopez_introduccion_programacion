@@ -1,0 +1,30 @@
+def obtener_Datos_empleado():
+    # recibimos los datos del usuario
+    nombre = input("Ingresa el nomnre del colaborador: ");
+    salariobruto = input(f"Ingresa el salario bruto de {nombre} en S/. ");
+    porcentajeDescuento = input("Ingresa el prcentaje de descuento en %");
+
+    # convertir los datos a float para los calculos
+    salarioBrutoValor = float(salariobruto)
+    porcentajeDescuentoValor = float(porcentajeDescuento)
+
+    return nombre, salarioBrutoValor, porcentajeDescuentoValor
+
+def imprimirBoleta(nombreEmpleado, salarioBrutoEmpleado, porcentajeDescuentoEmpleado):
+    montoDescuento = salarioBrutoEmpleado * (porcentajeDescuentoEmpleado / 100);
+    salarioLiquido = salarioBrutoEmpleado - montoDescuento;
+    print("----Boleta de PAgo----");
+    print(f"colaborador: {nombreEmpleado}");
+    print(f"Salario bruto S/. {salarioBrutoEmpleado:.2f}")
+    print(f"Monto Descuento S/. {montoDescuento:.2f}")
+    print(f"Salario Neto S/. {salarioLiquido:.2f}")
+    print(====================================)
+
+# Flujo del programa
+print("Sistema de Generacion de Salario 2025")
+
+# invovamos a la funcion obtenerDAtosEmpleado
+nombre, salario, descuento = obtener_Datos_empleado();
+
+# Generar la impresion de boleta
+imprimirBoleta(nombre, salario, descuento)
