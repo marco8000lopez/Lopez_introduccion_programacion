@@ -1,0 +1,12 @@
+# lista
+
+# Elementos de cadena y numeros
+elementos = [20, "Claudia", 12.5, "Jesus Canales", True]
+
+# imprimier lista de elementos
+print(elementos)
+
+# imprimir los 3 primeros elementos
+print(elementos[0:3])
+
+print(elementos[0:2])
