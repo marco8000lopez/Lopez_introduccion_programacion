@@ -1,0 +1,8 @@
+# listas
+
+# temenos areas de una organizacion 
+areas = ["administracion", "recursos Humanos", "contabilidad", "sistemas"]
+
+#obtener posicion indexado del elemento de lista
+print(areas.index("sistemas"))
+print(areas.index("contabilidad"))

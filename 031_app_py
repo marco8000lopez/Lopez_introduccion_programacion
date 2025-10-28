@@ -1,0 +1,22 @@
+# Listas
+
+# Lista de nombres de meses del año del primer trimestre
+meses = ["Enero", "Febrero", "Marzo"]
+
+# Imprimir lista de elementos
+print(meses);
+      
+# Agregar elementos de mes
+meses.append("Abril")
+
+# Imprimir la lista de elementos actualizado
+print(meses)
+
+# Agregar un elemento de número
+meses.append(123)
+
+# agregar hasta ek nes de octubre
+meses.append("mayo");
+meses.append("junio");
+meses.extend(["julio", "agosto", "setiembre", "octubre"])
+print(meses)

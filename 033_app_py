@@ -1,0 +1,14 @@
+# listas
+
+# temenos areas de una organizacion 
+areas = ["administracion", "recursos Humanos", "contabilidad", "sistemas"]
+
+#buscar elementos dentro de lista
+print("recursos Humanos" in areas)
+
+#buscar eleemntos de lista
+print("Recursos Humanos" in areas)
+
+#buscar contabilidad
+print("contabilidad" in areas)
+print("sistemas" in areas)
