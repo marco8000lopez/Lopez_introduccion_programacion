@@ -1,0 +1,14 @@
+# tuplas
+
+# meses del año
+tupla =("enero", "Febrero", "Marzo")
+
+# numeros eneteros
+
+numeros = (1, 2, 3, 4, 5)
+
+#union de tuplas
+nuevatupla = tupla + numeros
+
+# mostrar union de tuplas
+print(nuevatupla)

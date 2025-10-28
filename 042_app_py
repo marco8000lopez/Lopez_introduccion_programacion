@@ -1,0 +1,7 @@
+# diccionarios
+
+#combinando elementos de diccionarios
+agenda = {"Jesus":[45, "lima"], "luis":[35, "trujillo"], "claudia":[28, "piura"]}
+
+#imprimir los elementos del diccionario
+print(agenda)

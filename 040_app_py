@@ -1,0 +1,13 @@
+# diccionarios
+
+# crar un diccionario
+diccionario = {"azul":"blue", "rojo":"red", "verde":"green", "amarillo":"yellow"}
+
+# imprimir los datos de un diccionario
+
+print(diccionario)
+
+#obterner el valir de la clave azul
+print(diccionario["azul"])
+print(diccionario["amarillo"])
+print(diccionario["rojo"])

@@ -1,0 +1,13 @@
+# tupla
+
+# crear una tupla con diversos tipos de elementos
+tupla = (4, 20, "ysabel", 15.75, ["manzana", "fresa"], 100)
+
+#agregar elelemntos en una tupla (error)
+
+tupla.append(55)
+print(tupla)
+
+#quitar elementos en una tupla (error)
+tupla.pop(0)
+print(tupla)

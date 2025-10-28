@@ -1,0 +1,19 @@
+# reto
+
+# elalborar un programa que solicite al usuario 5 nombres de paises desde la consola
+# estos nombres deben irse almacenando en una lista
+# luego debe imprimir los elelemtos de lista en consola
+
+# Crear una lista vacía para almacenar los nombres de los países
+paises = []
+
+# Solicitar al usuario los 5 nombres de países y guardarlos en la lista
+print("Por favor, introduce 5 nombres de países:")
+for i in range(5):
+    nombre_pais = input(f"Introduce el nombre del país número {i + 1}: ")
+    paises.append(nombre_pais)
+
+# Imprimir los elementos de la lista en la consola
+print("\nLos países que has introducido son:")
+for pais in paises:
+    print(pais)
